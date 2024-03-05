@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+
+    .button
+    {
+        width: 60px;
+        height: 30px;
+        line-height: 15px;
+      
+        position:absolute;
+      
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        overflow: hidden;
+      
+        border-radius:15px;
+      
+        background: rgb(255, 255, 255);
+        transition: all 0.2s ease;
+    }
+
+    .button:hover
+    {
+        color: rgb(255, 255, 255);
+        background: rgb(0, 140, 255);
+    }
+
+    .visible_content {
+        width: 200px; 
+        position: initial;
+        display: block;
+    }
+
+    .hidden_content {
+        width: 200px; 
+        position: absolute;
+        display: none;
+    }
+
+    .text_part {
+        width: inherit;
+        height: 50px;
+    }
+    </style>   
+
+</head>
+ 
+<body>	
+    <!-- title -->
+    <div style="width: 200px; height: 50px;">
+        <span style="font-size: 24px; font-weight: bold; white-space: nowrap; color: rgb(0,140,255)">
+            Program Wizard
+        </span>
+    </div>
+
+    <!-- Guide Content -->
+	<div id="program_wizard_0" class="visible_content">
+        <div class = 'text_part'>
+            <span >
+                    1. In the Amazon product page, point the mouse to the product(name) to be read.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_0.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_1" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                2. The "Score" is calculated according to the comments of the product. The higher the score, the better the comments.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_1.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_2" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                3. Click the "+Contrast" button, add this item to the comparison list.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_2.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_3" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                4. Check the comparison list at the right-top corner.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_3.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_4" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                5. "Sort" function helps to find the product with the best score.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_4.bmp" width="200px" height="150px">
+	</div>
+    
+    <div id="program_wizard_5" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                6. Click the product box to navigate to the location of this product in the page.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_5.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_6" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                7. Click the "minimize" button to hide the window.
+            </span>
+        </div>
+
+        <br>
+        <img src="images/wizard_6.bmp" width="200px" height="150px">
+	</div>
+
+    <div id="program_wizard_7" class="hidden_content">
+        <div class = 'text_part'>
+            <span >
+                The software wizard is over. 
+                Have a good time.
+            </span>
+        </div>
+
+        <br>
+        <img width="200px" height="150px">
+	</div>
+    
+
+
+    <!-- COntrol button -->
+    <div style="width: 200px; display: flex">
+        <button id = "pre_button" class = "button" style="left: 10px; bottom: 10px;">
+            Previous
+        </button>
+
+        <button id = "next_button" class = "button" style="right: 10px; bottom: 10px;">
+            Next
+        </button>
+    </div>
+</body>
+
+<script src="pop.js"></script>
+
+</html>

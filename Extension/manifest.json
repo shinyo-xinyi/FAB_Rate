@@ -1,0 +1,39 @@
+{
+	"name": "Amazon Comment Emotion Analysis Add-On final version",
+	"description": "为Amazon用户提供易于获取的商品评价 final version",
+	"version": "2.0",
+	"manifest_version": 2,
+
+	"background": {
+		"persistent": false,
+		"scripts": [
+			"background.js"
+			]
+		},
+
+	"permissions": [
+		"tabs", 
+		"*://*/*"
+		],
+
+	"browser_action": {
+		"default_popup": "pop.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["content_script.css"],
+			"js": [
+				"content_script.js"
+			]
+		}
+	],
+
+	"web_accessible_resources": 
+	[
+		"images/*",
+		"pop.html",
+		"pop.js"
+	]
+}
